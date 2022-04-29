@@ -203,7 +203,8 @@ rm terraform.tfstate
 ##Set workspace variables
 
 
-![alt text](learn-terraform-aws-instance/z3377156513282_468c7314829bd06d96de165c9365a6e4.jpg)
+![z3377156513282_468c7314829bd06d96de165c9365a6e4](https://user-images.githubusercontent.com/10163092/165888515-f2d98e1a-0811-4e5a-a376-2b5db78182c7.jpg)
+
 
 
 - Apply configutation with `terraform apply` command
