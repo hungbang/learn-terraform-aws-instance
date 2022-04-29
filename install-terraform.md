@@ -4,21 +4,21 @@ brew tap hashicorp/tap
 brew install hashicorp/tap/terraform
 ```
 
-##Update version
+## Update version
 
 ```
 brew update
 brew upgrade hashicorp/tap/terraform
 ```
 
-##Verify installation
+## Verify installation
 
 ```
 terraform -help
 terraform -help plan
 ```
 
-##Enable tab completion
+## Enable tab completion
 
 ```
 touch ~/.zshrc

@@ -1,4 +1,4 @@
-#Quick start
+# Quick start
 ## Download and install docker
 
 ```
@@ -48,19 +48,19 @@ resource "docker_container" "nginx" {
 terraform init
 ```
 
-##Apply configuration
+## Apply configuration
 
 ```
 terraform apply
 ```
 
-##Verify deployment
+## Verify deployment
 
 ```
 docker ps
 ```
 
-##Destry infrastructure
+## Destry infrastructure
 
 ```
 terraform destroy
