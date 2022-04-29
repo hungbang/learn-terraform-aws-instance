@@ -1,11 +1,11 @@
 terraform {
 
-  cloud {
-    organization = "devshark"
-    workspaces {
-      name = "Example-Workspace"
-    }
-  }
+  # cloud {
+  #   organization = "devshark"
+  #   workspaces {
+  #     name = "Example-Workspace"
+  #   }
+  # }
 
   required_providers {
     aws = {
@@ -18,12 +18,13 @@ terraform {
 }
 
 provider "aws" {
-  # profile = "terraform"
+  profile = "terraform"
   region  = "us-west-2"
 }
 
 resource "aws_instance" "app_server" {
-  ami           = "ami-08d70e59c07c61a3a"
+  ami           = "ami-830c94e3"
+  # ami           = "ami-08d70e59c07c61a3a"
   instance_type = "t2.micro"
 
   tags = {
