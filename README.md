@@ -25,11 +25,12 @@ terraform {
 
 - terraform {} block contains Terraform settings
 	- including the required providers Terraform will use to provision your infrastructure.
+  - The `required_version` setting accepts a version constraint string, which specifies which versions of Terraform can be used with your configuration. 
 - For each provider, the source  attribute defines an optional hostname, a namespace, and the provider type
 - Terraform installs providers from the Terraform Registry by default
 - hashicorp/aws  => registry.terraform.io/hashicorp/aws
 - required_providers set a version constraint for each provider
-- version attribute is optional, but we recommend using it to constrain the provider version so that Terraform does not install a version of the provider that does not work with your configuration
+- `version` attribute is optional, but we recommend using it to constrain the provider version so that Terraform does not install a version of the provider that does not work with your configuration
 	- If you do not specify a provider version, Terraform will automatically download the most recent version during initialization
 	- https://www.terraform.io/language/providers/requirements
 
@@ -77,6 +78,12 @@ resource "aws_instance" "app_server" {
 	- For example, the ID for your EC2 instance is `aws_instance.app_server`
 - Resource blocks contain arguments which you use to configure the resource. Arguments can include things like machine sizes, disk image names, or VPC IDs.
 
+
+
+# Pre-install
+## IAM Credentials setting
+export AWS_ACCESS_KEY_ID="<YOUR_AWS_ACCESS_KEY_ID>"
+export AWS_SECRET_ACCESS_KEY="<YOUR_AWS_SECRET_ACCESS_KEY>"
 
 # Initialize the directory
 
