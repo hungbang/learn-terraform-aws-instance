@@ -167,7 +167,7 @@ output "instance_public_ip" {
 
 ```
 - Apply configuration
-- Query the outputs with the `terraform out` command
+- Query the outputs with the `terraform output` command
 
 # Store remote state
 - In production environments you should keep your state secure and encrypted, where your teammates can access it to collaborate on infrastructure
