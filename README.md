@@ -105,7 +105,7 @@ terraform apply
 - The output has a + next to aws_instance.app_server, meaning that Terraform will create this resource
 - When the value displayed is (known after apply), it means that the value will not be known until the resource is created
 
-##Inspect state
+## Inspect state
 
 When you applied your configuration, Terraform wrote data into a file called terraform.tfstate
 
